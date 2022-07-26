@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+}
+.item1 {
+  background-color: green;
+  width: 250px;
+  height: 250px;
+}
+.item2 {
+  background-color: red;
+  width: 250px;
+  height: 250px;
+}
+li {
+  display: block;
+}
+.item3 {
+  background-color: grey;
+  width: 250px;
+  height: 250px;
+}
