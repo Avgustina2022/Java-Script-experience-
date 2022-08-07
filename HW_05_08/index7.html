@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      let horizont = 10;
+      let vertical = 5;
+      let pramoug = "*".repeat(10);
+
+      console.log(pramoug);
+
+      for (var i = 0; i < vertical - 2; ++i) {
+        console.log("*" + " ".repeat(horizont - 2) + "*");
+      }
+
+      console.log(pramoug);
+      {
+        document.getElementById("container").innerHTML += "<br>";
+      }
+    </script>
+  </body>
+</html>
