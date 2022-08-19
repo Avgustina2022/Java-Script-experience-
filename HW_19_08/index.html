@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .block {
+            width: 300px;
+            height: 500px;
+            background-color: rgb(201, 200, 200);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap:wrap;
+            margin: 0 auto;
+        }
+
+        .button {
+            background-color: #96a098;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        .buttonReset {
+            background-color: #96a098;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin:0 auto;
+            border-radius: 50%;
+        }
+        .pausa {
+            background-color: #96a098;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        .Stopwatch {
+            margin: 0 auto;
+            font-style: bold;
+            font-size: 45px;
+            color: grey;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="block">
+        <div id="stopwatch">Stopwatch</div>
+        <div> <button id="buttonReset" class="buttonReset">Reset</button>
+            <button id="pausa" class="pausa">Pause</button>
+            <button id="button" class="button">Start</button>
+           
+        </div>
+
+    </div>
+    </form>
+    </div>
+
+    <script>
+        let sec = 0;
+        function func() {
+            sec++
+            document.getElementById('stopwatch').innerHTML = sec;
+        }
+        button.onclick = () => {
+            let timerId = setInterval(func, 1000)
+            setTimeout(function () {
+                clearInterval(timerId);
+                
+            }, 10000)
+        }
+        pausa.onclick=()=>{
+            let timerPausa = clearInterval(func, 1000)
+            setTimeout(function () {
+                clearInterval(timerPausa);
+                
+            }, 10000)
+        }
+        buttonReset.onclick=()=>{
+            let timerReset= clearInterval(func, 1000)
+            ("click", () => {
+        clearInterval(interval);
+        clearFields();
+      })}
+
+        
+    </script>
+</body>
+
+</html>
